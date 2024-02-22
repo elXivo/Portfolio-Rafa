@@ -1,0 +1,138 @@
+/* COLORES GENGRALES */
+
+body {
+    background-color: #29272e ;
+    color: #eeeeee;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer {
+    background-color: #eeeeee;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+body {
+    color: #eeeeee;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* TITULO */
+
+h1 {
+    text-align: center;
+  }
+
+.logors {
+    display: block;
+    margin: 0 auto;
+}
+
+/* NAVEGADOR */
+
+nav {
+    background: linear-gradient(#29272e,#eeeeee,#eeeeee,#eeeeee,#29272e);
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+    display: flex;
+  }
+  
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    }
+
+nav a:visited {
+        color: #29272e;
+      }
+  
+nav a:hover {
+    background-color: rgba(68, 68, 68, 0.5);
+    color: #fff;
+  }
+  
+nav a.active {
+    background-color: #555;
+  }
+
+
+
+/* ANIMACION IMAGENES*/
+
+@keyframes girar {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+.imagenrotar {
+  animation: girar 2s linear infinite;
+}
+
+@keyframes entrar-derecha {
+  from { margin-left: 100%; }
+  to { margin-left: 0; }
+}
+.imagenentrar {
+  animation: entrar-derecha 1s ease-in-out;
+}
+
+/* FORMULARIO */
+
+input{
+    background-color: #bbbbbb;
+}
+
+  input:focus{
+    background-color: #ffffff;
+}
+
+/* ADAPTACIÓN MOVIL */
+
+@media screen and (max-width: 600px) {
+  nav {
+    font-size: 150%;
+  }
+  
+  .logors {
+    display: block;
+  }
+  
+  footer {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+
+  .botonnav{
+    width: 2em;
+    height: 2em;
+  }
+}
+
+
+/* MENU DESPLEGABLE ¡¡¡ No me funciona :( !!! */
+
+/* .contenidomenu{
+  display: none;
+}
+
+.contenidomenu a{
+  display: flex;
+}
+
+.botonnav .contenidomenu{
+  display: flex;
+} */
